@@ -23,10 +23,10 @@ jobs:
 
       - name: Build and Publish
         env:
-          TWINE_USERNAME: ${{ github.actor }}
-          TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
+            TWINE_USERNAME: ${{ github.actor }}
+            TWINE_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python -m pip install --upgrade pip
-          pip install build twine
-          python -m build
-          python -m twine upload --repository-url https://pypi.pkg.github.com/${{ github.repository_owner }}/ dist/*
+            python -m pip install --upgrade pip
+            pip install build twine
+            python -m build
+            python -m twine upload --repository-url https://pypi.pkg.github.com/${{ github.repository_owner }}/ dist/*
