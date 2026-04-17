@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "space-utils"
-version = "0.1.10"
+version = "1.0.0"
 authors = [
     { name="Simonchila", email="simonchila47@gmail.com" },
 ]
